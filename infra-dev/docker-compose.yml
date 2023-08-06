@@ -1,0 +1,8 @@
+version: "3"
+services:
+  rwkv:
+    build: ./rwkv
+    volumes:
+      - ../:/usr/src/rwkv.zig
+    tty: true
+    working_dir: /usr/src/rwkv.zig/rwkv
