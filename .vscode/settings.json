@@ -1,4 +1,7 @@
 {
     "zig.zigPath": "/usr/local/zig/zig",
-    "zig.zls.path": "/usr/local/bin/zls"
+    "zig.zls.path": "/usr/local/bin/zls",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    }
 }

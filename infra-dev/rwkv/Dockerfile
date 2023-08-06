@@ -16,3 +16,9 @@ RUN PLATFORM=`uname -m` \
     && curl https://zig.pm/zls/downloads/${PLATFORM}-linux/bin/zls -o /usr/local/bin/zls \
     && chmod +x /usr/local/bin/zls
 ENV PATH="$PATH:${ZIG_PATH}"
+
+# Install python and packages
+RUN apt install -y python3 python3-pip
+COPY requirements.txt /tmp/requirements.txt
+RUN pip install -r /tmp/requirements.txt \
+    && rm /tmp/requirements.txt

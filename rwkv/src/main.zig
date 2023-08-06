@@ -1,24 +1,17 @@
 const std = @import("std");
+const Rwkv = @import("model.zig").Rwkv;
 
 pub fn main() !void {
-    // Prints to stderr (it's a shortcut based on `std.io.getStdErr()`)
-    std.debug.print("All your {s} are belong to us.\n", .{"codebase"});
-
-    // stdout is for the actual output of your application, for example if you
-    // are implementing gzip, then only the compressed bytes should be sent to
-    // stdout, not any debugging messages.
-    const stdout_file = std.io.getStdOut().writer();
-    var bw = std.io.bufferedWriter(stdout_file);
-    const stdout = bw.writer();
-
-    try stdout.print("Run `zig build test` to run the tests.\n", .{});
-
-    try bw.flush(); // don't forget to flush!
-}
-
-test "simple test" {
-    var list = std.ArrayList(i32).init(std.testing.allocator);
-    defer list.deinit(); // try commenting this out and see if zig detects the memory leak!
-    try list.append(42);
-    try std.testing.expectEqual(@as(i32, 42), list.pop());
+    const allocator = std.heap.c_allocator;
+    const args = try std.process.argsAlloc(allocator);
+    defer std.process.argsFree(allocator, args);
+    if (args.len < 4) {
+        std.debug.print("Usage: {s} <model_file_path> <info_file_path> <tokenizer_file_path>\n", .{args[0]});
+        std.os.exit(1);
+    }
+    // Read model
+    const model_file_path = args[1];
+    const info_file_path = args[2];
+    const rwkv = try Rwkv.init(allocator, model_file_path, info_file_path);
+    defer rwkv.deinit();
 }

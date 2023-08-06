@@ -1,2 +1,3 @@
-*
-!.gitignore
+rwkv.pth
+rwkv.bin
+tokenizer.json

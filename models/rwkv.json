@@ -1,0 +1,1726 @@
+{
+    "emb.weight": [
+        50277,
+        1024
+    ],
+    "blocks.0.ln1.weight": [
+        1024
+    ],
+    "blocks.0.ln1.bias": [
+        1024
+    ],
+    "blocks.0.ln2.weight": [
+        1024
+    ],
+    "blocks.0.ln2.bias": [
+        1024
+    ],
+    "blocks.0.att.time_decay": [
+        1024
+    ],
+    "blocks.0.att.time_first": [
+        1024
+    ],
+    "blocks.0.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.0.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.0.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.0.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.0.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.0.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.0.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.0.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.0.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.0.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.0.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.0.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.0.ln0.weight": [
+        1024
+    ],
+    "blocks.0.ln0.bias": [
+        1024
+    ],
+    "blocks.1.ln1.weight": [
+        1024
+    ],
+    "blocks.1.ln1.bias": [
+        1024
+    ],
+    "blocks.1.ln2.weight": [
+        1024
+    ],
+    "blocks.1.ln2.bias": [
+        1024
+    ],
+    "blocks.1.att.time_decay": [
+        1024
+    ],
+    "blocks.1.att.time_first": [
+        1024
+    ],
+    "blocks.1.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.1.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.1.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.1.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.1.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.1.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.1.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.1.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.1.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.1.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.1.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.1.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.2.ln1.weight": [
+        1024
+    ],
+    "blocks.2.ln1.bias": [
+        1024
+    ],
+    "blocks.2.ln2.weight": [
+        1024
+    ],
+    "blocks.2.ln2.bias": [
+        1024
+    ],
+    "blocks.2.att.time_decay": [
+        1024
+    ],
+    "blocks.2.att.time_first": [
+        1024
+    ],
+    "blocks.2.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.2.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.2.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.2.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.2.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.2.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.2.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.2.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.2.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.2.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.2.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.2.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.3.ln1.weight": [
+        1024
+    ],
+    "blocks.3.ln1.bias": [
+        1024
+    ],
+    "blocks.3.ln2.weight": [
+        1024
+    ],
+    "blocks.3.ln2.bias": [
+        1024
+    ],
+    "blocks.3.att.time_decay": [
+        1024
+    ],
+    "blocks.3.att.time_first": [
+        1024
+    ],
+    "blocks.3.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.3.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.3.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.3.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.3.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.3.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.3.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.3.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.3.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.3.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.3.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.3.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.4.ln1.weight": [
+        1024
+    ],
+    "blocks.4.ln1.bias": [
+        1024
+    ],
+    "blocks.4.ln2.weight": [
+        1024
+    ],
+    "blocks.4.ln2.bias": [
+        1024
+    ],
+    "blocks.4.att.time_decay": [
+        1024
+    ],
+    "blocks.4.att.time_first": [
+        1024
+    ],
+    "blocks.4.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.4.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.4.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.4.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.4.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.4.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.4.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.4.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.4.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.4.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.4.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.4.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.5.ln1.weight": [
+        1024
+    ],
+    "blocks.5.ln1.bias": [
+        1024
+    ],
+    "blocks.5.ln2.weight": [
+        1024
+    ],
+    "blocks.5.ln2.bias": [
+        1024
+    ],
+    "blocks.5.att.time_decay": [
+        1024
+    ],
+    "blocks.5.att.time_first": [
+        1024
+    ],
+    "blocks.5.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.5.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.5.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.5.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.5.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.5.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.5.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.5.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.5.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.5.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.5.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.5.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.6.ln1.weight": [
+        1024
+    ],
+    "blocks.6.ln1.bias": [
+        1024
+    ],
+    "blocks.6.ln2.weight": [
+        1024
+    ],
+    "blocks.6.ln2.bias": [
+        1024
+    ],
+    "blocks.6.att.time_decay": [
+        1024
+    ],
+    "blocks.6.att.time_first": [
+        1024
+    ],
+    "blocks.6.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.6.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.6.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.6.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.6.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.6.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.6.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.6.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.6.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.6.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.6.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.6.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.7.ln1.weight": [
+        1024
+    ],
+    "blocks.7.ln1.bias": [
+        1024
+    ],
+    "blocks.7.ln2.weight": [
+        1024
+    ],
+    "blocks.7.ln2.bias": [
+        1024
+    ],
+    "blocks.7.att.time_decay": [
+        1024
+    ],
+    "blocks.7.att.time_first": [
+        1024
+    ],
+    "blocks.7.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.7.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.7.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.7.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.7.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.7.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.7.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.7.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.7.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.7.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.7.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.7.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.8.ln1.weight": [
+        1024
+    ],
+    "blocks.8.ln1.bias": [
+        1024
+    ],
+    "blocks.8.ln2.weight": [
+        1024
+    ],
+    "blocks.8.ln2.bias": [
+        1024
+    ],
+    "blocks.8.att.time_decay": [
+        1024
+    ],
+    "blocks.8.att.time_first": [
+        1024
+    ],
+    "blocks.8.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.8.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.8.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.8.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.8.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.8.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.8.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.8.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.8.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.8.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.8.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.8.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.9.ln1.weight": [
+        1024
+    ],
+    "blocks.9.ln1.bias": [
+        1024
+    ],
+    "blocks.9.ln2.weight": [
+        1024
+    ],
+    "blocks.9.ln2.bias": [
+        1024
+    ],
+    "blocks.9.att.time_decay": [
+        1024
+    ],
+    "blocks.9.att.time_first": [
+        1024
+    ],
+    "blocks.9.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.9.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.9.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.9.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.9.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.9.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.9.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.9.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.9.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.9.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.9.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.9.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.10.ln1.weight": [
+        1024
+    ],
+    "blocks.10.ln1.bias": [
+        1024
+    ],
+    "blocks.10.ln2.weight": [
+        1024
+    ],
+    "blocks.10.ln2.bias": [
+        1024
+    ],
+    "blocks.10.att.time_decay": [
+        1024
+    ],
+    "blocks.10.att.time_first": [
+        1024
+    ],
+    "blocks.10.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.10.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.10.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.10.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.10.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.10.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.10.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.10.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.10.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.10.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.10.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.10.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.11.ln1.weight": [
+        1024
+    ],
+    "blocks.11.ln1.bias": [
+        1024
+    ],
+    "blocks.11.ln2.weight": [
+        1024
+    ],
+    "blocks.11.ln2.bias": [
+        1024
+    ],
+    "blocks.11.att.time_decay": [
+        1024
+    ],
+    "blocks.11.att.time_first": [
+        1024
+    ],
+    "blocks.11.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.11.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.11.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.11.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.11.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.11.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.11.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.11.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.11.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.11.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.11.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.11.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.12.ln1.weight": [
+        1024
+    ],
+    "blocks.12.ln1.bias": [
+        1024
+    ],
+    "blocks.12.ln2.weight": [
+        1024
+    ],
+    "blocks.12.ln2.bias": [
+        1024
+    ],
+    "blocks.12.att.time_decay": [
+        1024
+    ],
+    "blocks.12.att.time_first": [
+        1024
+    ],
+    "blocks.12.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.12.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.12.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.12.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.12.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.12.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.12.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.12.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.12.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.12.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.12.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.12.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.13.ln1.weight": [
+        1024
+    ],
+    "blocks.13.ln1.bias": [
+        1024
+    ],
+    "blocks.13.ln2.weight": [
+        1024
+    ],
+    "blocks.13.ln2.bias": [
+        1024
+    ],
+    "blocks.13.att.time_decay": [
+        1024
+    ],
+    "blocks.13.att.time_first": [
+        1024
+    ],
+    "blocks.13.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.13.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.13.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.13.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.13.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.13.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.13.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.13.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.13.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.13.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.13.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.13.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.14.ln1.weight": [
+        1024
+    ],
+    "blocks.14.ln1.bias": [
+        1024
+    ],
+    "blocks.14.ln2.weight": [
+        1024
+    ],
+    "blocks.14.ln2.bias": [
+        1024
+    ],
+    "blocks.14.att.time_decay": [
+        1024
+    ],
+    "blocks.14.att.time_first": [
+        1024
+    ],
+    "blocks.14.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.14.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.14.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.14.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.14.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.14.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.14.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.14.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.14.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.14.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.14.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.14.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.15.ln1.weight": [
+        1024
+    ],
+    "blocks.15.ln1.bias": [
+        1024
+    ],
+    "blocks.15.ln2.weight": [
+        1024
+    ],
+    "blocks.15.ln2.bias": [
+        1024
+    ],
+    "blocks.15.att.time_decay": [
+        1024
+    ],
+    "blocks.15.att.time_first": [
+        1024
+    ],
+    "blocks.15.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.15.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.15.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.15.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.15.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.15.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.15.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.15.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.15.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.15.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.15.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.15.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.16.ln1.weight": [
+        1024
+    ],
+    "blocks.16.ln1.bias": [
+        1024
+    ],
+    "blocks.16.ln2.weight": [
+        1024
+    ],
+    "blocks.16.ln2.bias": [
+        1024
+    ],
+    "blocks.16.att.time_decay": [
+        1024
+    ],
+    "blocks.16.att.time_first": [
+        1024
+    ],
+    "blocks.16.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.16.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.16.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.16.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.16.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.16.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.16.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.16.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.16.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.16.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.16.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.16.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.17.ln1.weight": [
+        1024
+    ],
+    "blocks.17.ln1.bias": [
+        1024
+    ],
+    "blocks.17.ln2.weight": [
+        1024
+    ],
+    "blocks.17.ln2.bias": [
+        1024
+    ],
+    "blocks.17.att.time_decay": [
+        1024
+    ],
+    "blocks.17.att.time_first": [
+        1024
+    ],
+    "blocks.17.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.17.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.17.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.17.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.17.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.17.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.17.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.17.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.17.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.17.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.17.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.17.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.18.ln1.weight": [
+        1024
+    ],
+    "blocks.18.ln1.bias": [
+        1024
+    ],
+    "blocks.18.ln2.weight": [
+        1024
+    ],
+    "blocks.18.ln2.bias": [
+        1024
+    ],
+    "blocks.18.att.time_decay": [
+        1024
+    ],
+    "blocks.18.att.time_first": [
+        1024
+    ],
+    "blocks.18.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.18.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.18.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.18.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.18.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.18.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.18.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.18.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.18.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.18.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.18.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.18.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.19.ln1.weight": [
+        1024
+    ],
+    "blocks.19.ln1.bias": [
+        1024
+    ],
+    "blocks.19.ln2.weight": [
+        1024
+    ],
+    "blocks.19.ln2.bias": [
+        1024
+    ],
+    "blocks.19.att.time_decay": [
+        1024
+    ],
+    "blocks.19.att.time_first": [
+        1024
+    ],
+    "blocks.19.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.19.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.19.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.19.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.19.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.19.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.19.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.19.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.19.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.19.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.19.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.19.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.20.ln1.weight": [
+        1024
+    ],
+    "blocks.20.ln1.bias": [
+        1024
+    ],
+    "blocks.20.ln2.weight": [
+        1024
+    ],
+    "blocks.20.ln2.bias": [
+        1024
+    ],
+    "blocks.20.att.time_decay": [
+        1024
+    ],
+    "blocks.20.att.time_first": [
+        1024
+    ],
+    "blocks.20.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.20.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.20.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.20.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.20.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.20.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.20.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.20.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.20.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.20.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.20.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.20.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.21.ln1.weight": [
+        1024
+    ],
+    "blocks.21.ln1.bias": [
+        1024
+    ],
+    "blocks.21.ln2.weight": [
+        1024
+    ],
+    "blocks.21.ln2.bias": [
+        1024
+    ],
+    "blocks.21.att.time_decay": [
+        1024
+    ],
+    "blocks.21.att.time_first": [
+        1024
+    ],
+    "blocks.21.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.21.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.21.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.21.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.21.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.21.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.21.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.21.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.21.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.21.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.21.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.21.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.22.ln1.weight": [
+        1024
+    ],
+    "blocks.22.ln1.bias": [
+        1024
+    ],
+    "blocks.22.ln2.weight": [
+        1024
+    ],
+    "blocks.22.ln2.bias": [
+        1024
+    ],
+    "blocks.22.att.time_decay": [
+        1024
+    ],
+    "blocks.22.att.time_first": [
+        1024
+    ],
+    "blocks.22.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.22.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.22.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.22.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.22.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.22.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.22.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.22.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.22.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.22.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.22.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.22.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "blocks.23.ln1.weight": [
+        1024
+    ],
+    "blocks.23.ln1.bias": [
+        1024
+    ],
+    "blocks.23.ln2.weight": [
+        1024
+    ],
+    "blocks.23.ln2.bias": [
+        1024
+    ],
+    "blocks.23.att.time_decay": [
+        1024
+    ],
+    "blocks.23.att.time_first": [
+        1024
+    ],
+    "blocks.23.att.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.23.att.time_mix_v": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.23.att.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.23.att.key.weight": [
+        1024,
+        1024
+    ],
+    "blocks.23.att.value.weight": [
+        1024,
+        1024
+    ],
+    "blocks.23.att.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.23.att.output.weight": [
+        1024,
+        1024
+    ],
+    "blocks.23.ffn.time_mix_k": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.23.ffn.time_mix_r": [
+        1,
+        1,
+        1024
+    ],
+    "blocks.23.ffn.key.weight": [
+        4096,
+        1024
+    ],
+    "blocks.23.ffn.receptance.weight": [
+        1024,
+        1024
+    ],
+    "blocks.23.ffn.value.weight": [
+        1024,
+        4096
+    ],
+    "ln_out.weight": [
+        1024
+    ],
+    "ln_out.bias": [
+        1024
+    ],
+    "head.weight": [
+        50277,
+        1024
+    ]
+}
