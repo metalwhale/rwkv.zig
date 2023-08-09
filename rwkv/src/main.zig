@@ -1,5 +1,6 @@
 const std = @import("std");
 const Rwkv = @import("model.zig").Rwkv;
+const Tokenizer = @import("tokenizer.zig").Tokenizer;
 
 pub fn main() !void {
     const allocator = std.heap.c_allocator;
@@ -12,6 +13,14 @@ pub fn main() !void {
     // Read model
     const model_file_path = args[1];
     const info_file_path = args[2];
+    const tokenizer_file_path = args[3];
     const rwkv = try Rwkv.init(allocator, model_file_path, info_file_path);
     defer rwkv.deinit();
+    // Read tokenizer
+    const tokenizer = try Tokenizer.init(allocator, tokenizer_file_path);
+    defer tokenizer.deinit();
+    const prompt_tokens = Tokenizer.encode();
+    for (prompt_tokens) |token| {
+        std.debug.print("{s}", .{tokenizer.decode(token)});
+    }
 }
