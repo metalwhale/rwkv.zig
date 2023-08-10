@@ -1,6 +1,7 @@
 const std = @import("std");
 const layer = @import("layer.zig");
 const util = @import("util.zig");
+const State = @import("state.zig").State;
 const Allocator = std.mem.Allocator;
 const Emb = layer.Emb;
 const Block = layer.Block;
@@ -74,6 +75,7 @@ const Layers = struct {
                 weight.* = if (should_read) readWeight(info, full_name, memory, &pos) else null;
             }
             block.* = Block.init(
+                allocator,
                 ffn_hidden_dim,
                 weights[0].?,
                 weights[1].?,
@@ -99,6 +101,7 @@ const Layers = struct {
         }
         // `ln_out` layer
         const ln_out = LnOut.init(
+            allocator,
             readWeight(info, "ln_out.weight", memory, &pos),
             readWeight(info, "ln_out.bias", memory, &pos),
         );
@@ -168,4 +171,68 @@ pub const Rwkv = struct {
         self.layers.deinit();
         std.os.munmap(self.memory);
     }
+
+    pub fn getBlocksCount(self: Self) usize {
+        return self.layers.blocks.len;
+    }
+
+    pub fn getDim(self: Self) usize {
+        return self.layers.emb.weight.len / self.layers.emb.vocab_size;
+    }
+
+    pub fn infer(self: Self, token: usize, state: State) ![]f32 {
+        const x = self.layers.emb.embed(token); // (dim)
+        const x1 = try self.layers.blocks[0].norm(x, .ln0); // (dim)
+        defer self.allocator.free(x1);
+        for (self.layers.blocks, state.block_states) |block, block_state| {
+            const tx = try block.norm(x1, .ln1); // (dim)
+            defer self.allocator.free(tx);
+            const tdx = try block.time_mixing(tx, block_state);
+            defer self.allocator.free(tdx);
+            for (x1, tdx) |*x1i, tdxi| {
+                x1i.* += tdxi;
+            }
+            const cx = try block.norm(x1, .ln2); // (dim)
+            defer self.allocator.free(cx);
+            const cdx = try block.channel_mixing(cx, block_state);
+            defer self.allocator.free(cdx);
+            for (x1, cdx) |*x1i, cdxi| {
+                x1i.* += cdxi;
+            }
+        }
+        const x2 = try self.layers.ln_out.norm(x1);
+        defer self.allocator.free(x2);
+        const x3 = try self.allocator.alloc(f32, self.layers.head.vocab_size);
+        defer self.allocator.free(x3);
+        for (x3, 0..) |*x3i, i| {
+            x3i.* = 0;
+            for (self.layers.head.weight[i * x2.len .. (i + 1) * x2.len], x2) |hj, x2j| {
+                x3i.* += hj * x2j;
+            }
+        }
+        const probs = softmax(self.allocator, x3);
+        return probs;
+    }
 };
+
+fn softmax(allocator: Allocator, x: []const f32) ![]f32 {
+    const out = try allocator.alloc(f32, x.len);
+    // find max value (for numerical stability)
+    var max_x: f32 = x[0];
+    for (x[1..]) |xi| {
+        if (xi > max_x) {
+            max_x = xi;
+        }
+    }
+    // exp and sum
+    var sum: f32 = 0.0;
+    for (out, x) |*oi, xi| {
+        oi.* = @exp(xi - max_x);
+        sum += oi.*;
+    }
+    // normalize
+    for (out) |*oi| {
+        oi.* /= sum;
+    }
+    return out;
+}

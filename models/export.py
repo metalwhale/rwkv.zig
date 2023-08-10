@@ -22,7 +22,7 @@ def export(pth_file_path: str, output_dir_path: str):
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
-        print("Usage: python3 exporter.py <PTH_FILE_PATH> <OUTPUT_DIR_PATH>")
+        print(f"Usage: python3 {sys.argv[0]} <PTH_FILE_PATH> <OUTPUT_DIR_PATH>")
         exit(1)
     _, pth_file_path, output_dir_path = sys.argv[:3]
     export(pth_file_path, output_dir_path)

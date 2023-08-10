@@ -39,7 +39,7 @@ pub const Tokenizer = struct {
 
     pub fn encode() []const usize {
         // TODO: Implement true tokenizer
-        return &[_]usize{ 12092, 13862, 13, 619, 1711, 3331 }; // "Hello darkness, my old friend"
+        return &[_]usize{ 12092, 13862, 13, 619, 1711, 3331, 15 }; // "Hello darkness, my old friend."
     }
 
     pub fn decode(self: Self, token: usize) []u8 {

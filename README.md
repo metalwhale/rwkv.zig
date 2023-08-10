@@ -20,6 +20,15 @@ Minimal RWKV implementation in Zig
     cd ../rwkv/
     zig build run -- ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json
     ```
+    Or:
+    ```bash
+    zig build-exe ./src/main.zig -O ReleaseFast -lc
+    ./main ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json
+    ```
+    Output:
+    ```
+    Hello darkness, my old friend. I am glad to see you. I have been looking for you for a long time. I have
+    ```
 
 ## References
 - [Minimal implementation of a relatively small (430m parameter) RWKV model which generates text](https://johanwind.github.io/2023/03/23/rwkv_details.html)

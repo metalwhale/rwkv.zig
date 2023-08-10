@@ -1,3 +1,4 @@
 rwkv.pth
 rwkv.bin
 tokenizer.json
+__pycache__

@@ -1,5 +1,6 @@
 const std = @import("std");
 const Rwkv = @import("model.zig").Rwkv;
+const State = @import("state.zig").State;
 const Tokenizer = @import("tokenizer.zig").Tokenizer;
 
 pub fn main() !void {
@@ -19,8 +20,34 @@ pub fn main() !void {
     // Read tokenizer
     const tokenizer = try Tokenizer.init(allocator, tokenizer_file_path);
     defer tokenizer.deinit();
+    // Inference
+    const state = try State.init(allocator, rwkv.getBlocksCount(), rwkv.getDim());
+    defer state.deinit();
     const prompt_tokens = Tokenizer.encode();
+    var next_token: usize = undefined;
     for (prompt_tokens) |token| {
         std.debug.print("{s}", .{tokenizer.decode(token)});
+        const probs = try rwkv.infer(token, state);
+        defer allocator.free(probs);
+        next_token = sample(probs);
     }
+    for (0..20) |_| {
+        std.debug.print("{s}", .{tokenizer.decode(next_token)});
+        const probs = try rwkv.infer(next_token, state);
+        defer allocator.free(probs);
+        next_token = sample(probs);
+    }
+}
+
+fn sample(probs: []f32) usize {
+    // TODO: Choose token randomly
+    var token: usize = 0;
+    var max_p = probs[token];
+    for (probs[1..], 1..) |p, i| {
+        if (p > max_p) {
+            max_p = p;
+            token = i;
+        }
+    }
+    return token;
 }
