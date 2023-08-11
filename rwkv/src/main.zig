@@ -17,22 +17,19 @@ pub fn main() !void {
     const tokenizer_file_path = args[3];
     const rwkv = try Rwkv.init(allocator, model_file_path, info_file_path);
     defer rwkv.deinit();
-    // Read tokenizer
-    const tokenizer = try Tokenizer.init(allocator, tokenizer_file_path);
-    defer tokenizer.deinit();
     // Inference
     const state = try State.init(allocator, rwkv.getBlocksCount(), rwkv.getDim());
     defer state.deinit();
-    const prompt_tokens = Tokenizer.encode();
+    const prompt_tokens = Tokenizer.encode(tokenizer_file_path, "Hello darkness, my old friend.");
     var next_token: usize = undefined;
     for (prompt_tokens) |token| {
-        std.debug.print("{s}", .{tokenizer.decode(token)});
+        std.debug.print("{s}", .{Tokenizer.decode(tokenizer_file_path, token)});
         const probs = try rwkv.infer(token, state);
         defer allocator.free(probs);
         next_token = sample(probs);
     }
     for (0..20) |_| {
-        std.debug.print("{s}", .{tokenizer.decode(next_token)});
+        std.debug.print("{s}", .{Tokenizer.decode(tokenizer_file_path, next_token)});
         const probs = try rwkv.infer(next_token, state);
         defer allocator.free(probs);
         next_token = sample(probs);

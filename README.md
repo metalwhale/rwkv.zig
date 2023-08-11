@@ -8,21 +8,23 @@ Minimal RWKV implementation in Zig
     docker-compose up -d
     docker-compose exec -it rwkv bash
     ```
-2. Download models and export to another format:
+2. Build tokenizers wrapper:
+    ```bash
+    cd ../tokenizers-wrapper/
+    cargo build --release && mv target/release/libtokenizers.so /usr/local/lib/
+    cbindgen --lang c --output tokenizers.h && mv tokenizers.h /usr/local/include/
+    ```
+3. Download models and export to another format:
     ```bash
     cd ../models/
     curl -L https://huggingface.co/BlinkDL/rwkv-4-pile-430m/resolve/main/RWKV-4-Pile-430M-20220808-8066.pth -o rwkv.pth
     curl -L https://github.com/BlinkDL/ChatRWKV/raw/main/20B_tokenizer.json -o tokenizer.json
     python3 export.py ./rwkv.pth ./
     ```
-3. Inference:
+4. Inference:
     ```bash
     cd ../rwkv/
-    zig build run -- ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json
-    ```
-    Or:
-    ```bash
-    zig build-exe ./src/main.zig -O ReleaseFast -lc
+    zig build-exe ./src/main.zig -O ReleaseFast -lc -ltokenizers
     ./main ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json
     ```
     Output:

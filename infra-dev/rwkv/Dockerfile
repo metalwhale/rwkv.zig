@@ -22,3 +22,8 @@ RUN apt install -y python3 python3-pip
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt \
     && rm /tmp/requirements.txt
+
+# Install rust
+RUN apt install -y pkg-config libssl-dev
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN PATH="$HOME/.cargo/bin:$PATH" cargo install cbindgen
