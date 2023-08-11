@@ -25,7 +25,7 @@ Minimal RWKV implementation in Zig
     ```bash
     cd ../rwkv/
     zig build-exe ./src/main.zig -O ReleaseFast -lc -ltokenizers
-    ./main ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json
+    ./main ../models/rwkv.bin ../models/rwkv.json ../models/tokenizer.json "Hello darkness, my old friend."
     ```
     Output:
     ```
